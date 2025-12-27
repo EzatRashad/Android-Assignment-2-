@@ -8,19 +8,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!-- الصورة اللي فوق -->
         <ImageView
             android:id="@+id/courseImage"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop" />
 
-        <TextView
-            android:id="@+id/courseContent"
+        <!-- جزء الوصف بخلفية -->
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:textSize="14sp"
-            android:lineSpacingExtra="6dp"/>
+            android:background="@drawable/bg">
+
+            <TextView
+                android:id="@+id/courseContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="14sp"
+                android:lineSpacingExtra="6dp"
+                android:textColor="@android:color/white" />
+
+        </FrameLayout>
 
     </LinearLayout>
 </ScrollView>
